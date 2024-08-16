@@ -1,0 +1,132 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #54df29;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    padding: 10px 20px;
+    display: block;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #575757;
+}
+
+main {
+    padding: 20px;
+}
+
+.table-container {
+    margin: 20px 0;
+    overflow-x: auto;
+}
+
+.table-container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-container table, .table-container th, .table-container td {
+    border: 1px solid #ddd;
+}
+
+.table-container th, .table-container td {
+    padding: 8px;
+    text-align: center;
+}
+
+.table-container th {
+    background-color: #f2f2f2;
+}
+
+.table-container tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.table-container tr:hover {
+    background-color: #ddd;
+}
+
+/* Custom colors for each period */
+.table-container .period1 {
+    background-color: #e3f2fd; /* Light Blue */
+}
+
+.table-container .period2 {
+    background-color: #c8e6c9; /* Light Green */
+}
+
+.table-container .period4 {
+    background-color: #ffccbc; /* Light Orange */
+}
+
+.table-container .period5 {
+    background-color: #f0f4c3; /* Light Yellow */
+}
+
+.table-container .period7 {
+    background-color: #d1c4e9; /* Light Purple */
+}
+
+.table-container .period9 {
+    background-color: #b2dfdb; /* Light Teal */
+}
+
+.table-container .period10 {
+    background-color: #ffab91; /* Light Coral */
+}
+
+.table-container .break {
+    background-color: #f5f5f5; /* Yellow for Breaks */
+    color: #000; /* Black text color */
+    text-align: center;
+    font-weight: bold;
+}
+
+.table-container .lunch {
+    background-color: #ff9800; /* Orange for Lunch Break */
+    color: #5f15d6; /* White text color */
+    text-align: center;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        display: block;
+        margin: 10px 0;
+    }
+   
+    nav ul li {
+        margin-bottom: 5px;
+    }
+
+    .table-container {
+        margin: 10px 0;
+    }
+
+    .table-container table {
+        font-size: 12px;
+    }
+}
